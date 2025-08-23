@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2>Form khảo sát ý kiến người dùng</h2>
+<form>
+  <label>Bạn có thích sản phẩm này không?</label>
+  <div>
+    <input type="radio" name="like" value="yes"> Có
+    <input type="radio" name="like" value="no"> Không
+  </div>
+
+  <label>Chọn tính năng bạn thích:</label>
+  <div>
+    <input type="checkbox" name="feature" value="design"> Thiết kế <br>
+    <input type="checkbox" name="feature" value="price"> Giá cả <br>
+    <input type="checkbox" name="feature" value="quality"> Chất lượng
+  </div>
+
+  <label>Đánh giá chung:</label>
+  <select name="rating">
+    <option value="1">Rất tệ</option>
+    <option value="2">Tệ</option>
+    <option value="3">Bình thường</option>
+    <option value="4">Tốt</option>
+    <option value="5">Xuất sắc</option>
+  </select>
+
+  <label>Ý kiến thêm:</label>
+  <textarea rows="3" placeholder="Nhập ý kiến của bạn..."></textarea>
+
+  <button type="submit">Gửi khảo sát</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV Cá Nhân - Mẫu Đơn Giản</title>
+  <style>
+    :root{
+      --bg:#f6f7fb; --text:#1f2937; --muted:#6b7280; --brand:#2563eb; --card:#ffffff; --line:#e5e7eb;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+    .container{max-width:960px;margin:24px auto;padding:16px}
+    .header{display:flex;gap:16px;align-items:center;background:var(--card);padding:16px;border:1px solid var(--line);border-radius:12px}
+    .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid var(--line)}
+    h1{font-size:28px;margin:0}
+    .subtitle{margin:4px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:16px}
+    @media(min-width:820px){.grid{grid-template-columns:280px 1fr}}
+
+    aside,section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px}
+    h2{font-size:18px;margin:0 0 10px;color:var(--brand)}
+    .item{margin:10px 0}
+    .tag{display:inline-block;border:1px solid var(--line);padding:4px 8px;border-radius:999px;margin:4px 6px 0 0;font-size:12px;color:#111827}
+    .meta{color:var(--muted);font-size:13px}
+    ul{padding-left:18px;margin:6px 0}
+
+    /* In/Export PDF đẹp hơn */
+    @media print{
+      body{background:#fff}
+      .container{margin:0;max-width:none}
+      .header,aside,section{box-shadow:none;border-color:#ddd}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- ========== THÔNG TIN CÁ NHÂN ========== -->
+    <div class="header">
+      <!-- Thay ảnh của bạn vào src bên dưới -->
+      <img class="avatar" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?q=80&w=300&auto=format&fit=crop" alt="Ảnh đại diện">
+      <div>
+        <h1>Nguyễn Văn A</h1>
+        <p class="subtitle">Frontend Developer • Hà Nội, Việt Nam</p>
+        <p class="meta">📧 nguyenvana@example.com · ☎ 0900 000 000 · 🔗 linkedin.com/in/nguyenvana</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- ========== CỘT TRÁI ========== -->
+      <aside>
+        <h2>Thông tin cá nhân</h2>
+        <div class="item">
+          <p><b>Ngày sinh:</b> 01/01/2000</p>
+          <p><b>Địa chỉ:</b> Quận Cầu Giấy, Hà Nội</p>
+          <p><b>Website:</b> https://nguyenvana.dev</p>
+        </div>
+
+        <h2>Kỹ năng</h2>
+        <div class="item">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Git</span>
+        </div>
+
+        <h2>Chứng chỉ</h2>
+        <ul>
+          <li>Google UX Design (2024)</li>
+          <li>IELTS 7.0 (2023)</li>
+        </ul>
+      </aside>
+
+      <!-- ========== CỘT PHẢI ========== -->
+      <section>
+        <h2>Tóm tắt</h2>
+        <p>Lập trình viên Frontend với 2+ năm kinh nghiệm xây dựng web thân thiện, tối ưu hiệu năng. Yêu thích UX/UI và làm việc nhóm theo Agile/Scrum.</p>
+
+        <h2>Kinh nghiệm</h2>
+        <div class="item">
+          <b>Frontend Developer</b> — Công ty ABC <span class="meta">(06/2023 – hiện tại)</span>
+          <ul>
+            <li>Phát triển giao diện và thành phần UI tái sử dụng bằng React.</li>
+            <li>Tối ưu hiệu năng, giảm 30% thời gian tải trang.</li>
+            <li>Phối hợp QA/Designer theo quy trình Agile.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <b>Intern Web</b> — Studio XYZ <span class="meta">(01/2023 – 05/2023)</span>
+          <ul>
+            <li>Cắt HTML/CSS từ Figma, đảm bảo responsive.</li>
+            <li>Tự động hoá build bằng Vite và NPM scripts.</li>
+          </ul>
+        </div>
+
+        <h2>Học vấn</h2>
+        <div class="item">
+          <b>Cử nhân Công nghệ Thông tin</b> — ĐH Công Nghệ <span class="meta">(2019 – 2023)</span>
+          <ul>
+            <li>GPA: 3.4/4.0 · Chuyên ngành Hệ thống Thông tin</li>
+            <li>Đề tài: Xây dựng website bán sách sử dụng MERN</li>
+          </ul>
+        </div>
+
+        <h2>Dự án tiêu biểu</h2>
+        <div class="item">
+          <b>Portfolio cá nhân</b> — <span class="meta">react-portfolio.vercel.app</span>
+          <ul>
+            <li>Tạo hệ thống blog và gallery dự án, tối ưu SEO.</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
